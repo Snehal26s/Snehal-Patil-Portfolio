@@ -214,3 +214,46 @@
 @keyframes fadeIn {
   to { opacity: 1 }
 }
+
+
+
+/* ===== MOBILE: CORE SKILLS SAME AS CONNECT WITH ME ===== */
+@media (max-width: 768px) {
+
+  /* CONNECT WITH ME (already correct, keep same) */
+  .socials {
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  /* CORE SKILLS — make SAME as connect with me */
+  .skills {
+    align-items: center;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  .skills h4 {
+    text-align: center;
+  }
+
+  .skill-list {
+    justify-content: center;
+  }
+
+  /* SIMPLE ANIMATIONS ONLY */
+  .typewriter {
+    animation: none;        /* remove typing effect on mobile */
+    border-right: none;
+    width: auto;
+    white-space: normal;
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease forwards; /* simple fade */
+  }
+}
