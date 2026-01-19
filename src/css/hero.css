@@ -1,25 +1,13 @@
-.hero {
-  min-height: 100vh;
-  padding: 120px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background: #ffffff;      /* ✅ WHITE */
-  color: #020617;
-}
 /* ================= HERO ================= */
 
 .hero {
+  min-height: calc(100vh - 70px);
   padding: 120px 80px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
   color: #020617;
-
-  display: flex;
-  min-height: calc(100vh - 70px);
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -27,16 +15,27 @@
   max-width: 55%;
 }
 
-/* TEXT */
-.hero-name {
-  font-size: 56px;
+/* ================= TEXT ================= */
+
+.typewriter {
+  font-size: 48px;
   font-weight: 800;
+  color: #020617;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #0ea5e9;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards,
+             blink 0.7s infinite;
 }
 
-.hero-role {
+.fade-in {
+  margin-top: 12px;
   font-size: 24px;
-  margin: 10px 0 20px;
   color: #334155;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 3.2s;
 }
 
 .hero-desc {
@@ -44,15 +43,16 @@
   color: #475569;
   max-width: 520px;
   line-height: 1.7;
+  margin-top: 16px;
 }
 
 /* ================= CONNECT WITH ME ================= */
 
 .socials {
-display: flex;
+  display: flex;
   flex-direction: column;
-   margin-top: 24px;
-    align-items: flex-start;
+  margin-top: 24px;
+  align-items: flex-start;
   text-align: left;
 }
 
@@ -67,10 +67,7 @@ display: flex;
 .social-icons {
   display: flex;
   gap: 16px;
-    justify-content: flex-start;
-
-
-  margin-top: 10px;
+  justify-content: flex-start;
 }
 
 .social-icons a {
@@ -151,246 +148,8 @@ display: flex;
 
 /* ================= MOBILE ================= */
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-left,
-  .hero-right {
-    max-width: 100%;
-  }
-
-  .social-icons,
-  .skill-list {
-    justify-content: center;
-  }
-
-  .hero-right {
-    margin-top: 40px;
-  }
-}
-/* ================= FORCE WHITE BACKGROUND ================= */
-
-body {
-  background: #ffffff !important;
-}
-
-section {
-  background: #ffffff !important;
-}
-
-.hero {
-  background: #ffffff !important;
-  color: #020617 !important;
-}
-
-
-
-/* TYPEWRITER EFFECT */
-.typewriter {
-  font-size: 48px;
-  font-weight: 800;
-  color: #020617;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #0ea5e9;
-  width: 0;
-  animation: typing 3s steps(30, end) forwards,
-             blink 0.7s infinite;
-}
-
-.typewriter span {
-  color: #0ea5e9;
-}
-
-/* FADE-IN SUBTITLE */
-.fade-in {
-  margin-top: 12px;
-  font-size: 24px;
-  color: #334155;
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 3.2s;
-}
-
-/* KEYFRAMES */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  50% { border-color: transparent }
-}
-
-@keyframes fadeIn {
-  to { opacity: 1 }
-}
-.hero-left h2 {
-  margin-bottom: 24px;   /* 👈 space AFTER Java Full Stack Developer */
-}
-
-
-
-@media (max-width: 768px) {
-  .hero-right img {
-    width: 220px;
-    margin-top: 20px;
-  }
-}
-
-
-
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-left {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .hero-left h1 {
-    font-size: 28px;
-    line-height: 1.3;
-  }
-
-  .hero-left h2 {
-    font-size: 18px;
-  }
-
-  .hero-desc {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-top: 12px;
-  }
-}
-
-
-
-@media (max-width: 768px) {
-  .hero-right {
-    display: none;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .hero-desc {
-    max-height: 120px;
-    overflow: hidden;
-  }
-
-  .hero-desc::after {
-    content: "...";
-    display: block;
-    margin-top: 4px;
-  }
-}
-
-
-
-  /* Name */
-  .typewriter {
-    font-size: 28px !important;
-    margin-bottom: 8px !important;
-  }
-
-  /* Role */
-  .fade-in {
-    font-size: 16px !important;
-    margin-bottom: 16px !important;
-  }
-
-  /* CONNECT WITH ME */
-  .socials {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    margin-top: 12px !important;
-  }
-
-  .social-icons {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 16px !important;
-    margin-top: 8px !important;
-  }
-}
-
-
-/* ===== FINAL MOBILE HERO FIX (CENTER + ANIMATION) ===== */
 @media (max-width: 768px) {
 
-  .hero {
-    min-height: calc(100vh - 70px) !important;
-    padding: 0 !important;              /* 🔥 remove desktop padding */
-    display: flex !important;
-    justify-content: center !important; /* vertical center */
-    align-items: center !important;     /* horizontal center */
-    text-align: center !important;
-  }
-
-  .hero-left {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  /* TYPEWRITER – KEEP ANIMATION */
-  .typewriter {
-    width: auto !important;
-    white-space: normal !important;
-    overflow: visible !important;
-    border-right: 3px solid #0ea5e9 !important;
-    animation: typing 3s steps(30, end) forwards,
-               blink 0.7s infinite !important;
-    font-size: 28px !important;
-    margin-bottom: 10px !important;
-  }
-
-  /* ROLE (optional but nice) */
-  .fade-in {
-    font-size: 16px !important;
-    margin-bottom: 16px !important;
-    animation: fadeIn 1.5s ease forwards !important;
-    animation-delay: 3.2s !important;
-  }
-
-  /* CONNECT WITH ME */
-  .socials {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    margin-top: 8px !important;
-  }
-
-  .social-icons {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 16px !important;
-  }
-
-  /* Hide image only */
-  .hero-right {
-    display: none !important;
-  }
-}
-
-
-
-
-@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     align-items: flex-start;
@@ -402,14 +161,21 @@ section {
     max-width: 100%;
   }
 
-  .hero-desc {
-    display: block;
-    margin-top: 14px;
+  .typewriter {
+    font-size: 28px;
+    white-space: normal;
+    width: auto;
   }
 
-  .skills {
+  .fade-in {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .hero-desc {
     display: block;
-    margin-top: 24px;
+    max-height: none;      /* ✅ FULL TEXT */
+    overflow: visible;
   }
 
   .socials {
@@ -420,4 +186,31 @@ section {
   .social-icons {
     justify-content: flex-start;
   }
+
+  .skills {
+    display: block;
+  }
+
+  .skill-list {
+    justify-content: flex-start;
+  }
+
+  .hero-right {
+    display: none;         /* ✅ hide image only */
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1 }
 }
