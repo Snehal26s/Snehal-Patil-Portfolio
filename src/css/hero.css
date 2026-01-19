@@ -347,3 +347,13 @@ section {
     margin-top: 8px !important;
   }
 }
+/* ===== FIX NAME NOT SHOWING ON MOBILE ===== */
+@media (max-width: 768px) {
+  .typewriter {
+    width: auto !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    border-right: none !important;
+    animation: none !important;
+  }
+}
