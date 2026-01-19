@@ -152,7 +152,7 @@ export default function Resume() {
         {/* DOWNLOAD RESUME */}
         <div className="resume-download-center">
           <a
-            href="/SNEHALPATIL_Resume.pdf"
+            href="/SNEHALPATIL_Resume (4).pdf"
             download
             className="resume-btn"
           >
