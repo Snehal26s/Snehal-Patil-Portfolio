@@ -1,5 +1,5 @@
 import "../css/hero.css";
-import "../css/hero.mobile.override.css";
+// import "../css/hero.mobile.override.css";
 
 import { FaLinkedinIn, FaGithub, FaEnvelope, FaJava, FaAngular } from "react-icons/fa";
 import { SiSpringboot, SiMysql } from "react-icons/si";

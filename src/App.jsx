@@ -12,6 +12,7 @@ function App() {
 <div className="page-content">
   <Hero />
   <Projects />
+  <Resume/>
   <Contact />
 </div>
 
