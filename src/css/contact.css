@@ -159,26 +159,17 @@
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 900px) {
-  .contact-section {
-    padding: 80px 30px;
-  }
-
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-wrapper::before {
-    position: static;
-    margin-bottom: 30px;
-  }
-}
 @media (max-width: 768px) {
-  .contact-wrapper {
+  .hero {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  .contact-form-box {
-    margin-top: 30px;
+  .hero-left {
+    width: 100%;
+    align-items: center;
   }
 }
+
