@@ -1,0 +1,54 @@
+/* ========= FINAL MOBILE OVERRIDE ========= */
+/* This file MUST be loaded last */
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: calc(100vh - 70px) !important;
+    padding: 16px !important;
+    text-align: center !important;
+  }
+
+  .hero-left {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* SHOW ONLY NAME + CONNECT */
+  .hero-desc,
+  .skills,
+  .hero-right,
+  .fade-in {
+    display: none !important;
+  }
+
+  /* NAME */
+  .typewriter {
+    font-size: 28px !important;
+    width: auto !important;
+    white-space: normal !important;
+    border: none !important;
+    animation: none !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* CONNECT */
+  .socials {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 0 !important;
+  }
+
+  .social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+}
