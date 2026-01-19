@@ -27,7 +27,7 @@
 }
 
 .contact-wrapper::before {
-  /* content: "CONNECT WITH ME"; */
+  content: "CONNECT WITH ME";
   position: absolute;
   top: -55px;
 
@@ -40,6 +40,7 @@
   color: #020617;
   text-transform: uppercase;
   text-align: center;
+  
 }
 
 
@@ -177,15 +178,33 @@
 }
 
 
-
 @media (max-width: 768px) {
   .contact-wrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .contact-info,
   .contact-form-box {
     width: 100%;
+  }
+}
+
+
+
+/* =================================================
+   CONTACT – MOBILE FIX
+   ================================================= */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .contact-wrapper::before {
+    font-size: 20px;
+    top: -35px;
+    width: 100%;
+    text-align: center;
   }
 }
