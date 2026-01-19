@@ -27,7 +27,7 @@
 }
 
 .contact-wrapper::before {
-  content: "CONNECT WITH ME";
+  /* content: "CONNECT WITH ME"; */
   position: absolute;
   top: -55px;
 

@@ -11,7 +11,8 @@ export default function Hero() {
         {/* <h1 className="hero-name">Snehal Patil</h1>
         <h2 className="hero-role">Java Full Stack Developer</h2> */}
 <h1 className="typewriter">
-  Hello, I am <span>Snehal Patil</span>
+  Hello, I am Snehal Patil
+  {/* <span>Snehal Patil</span> */}
 </h1>
 
 <h2 className="fade-in">
