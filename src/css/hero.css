@@ -280,3 +280,42 @@ section {
     display: none;
   }
 }
+
+
+@media (max-width: 768px) {
+  .hero-desc {
+    max-height: 120px;
+    overflow: hidden;
+  }
+
+  .hero-desc::after {
+    content: "...";
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+
+/* ===== MOBILE HERO FINAL FIX ===== */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto !important;
+    padding-top: 20px !important;
+  }
+
+  .hero-desc {
+    display: none !important;
+  }
+
+  .skills {
+    display: none !important;
+  }
+
+  .socials {
+    margin-top: 16px !important;
+  }
+
+  .hero-right {
+    display: none !important;
+  }
+}
