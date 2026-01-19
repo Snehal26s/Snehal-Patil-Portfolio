@@ -23,11 +23,16 @@ export default function Navbar() {
   }, []);
 
   const scrollTo = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const yOffset = -80;
+const element = document.getElementById(id);
+const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+window.scrollTo({ top: y, behavior: "smooth" });
+
   };
 
   return (
-    <nav className="navbar">
+<nav className="navbar fixed-navbar">
       {/* <h2 className="logo">Snehal Patil</h2> */}
  <div className="logo">
   <img src="/girl.png" alt="Snehal Patil" />

@@ -9,3 +9,6 @@ body {
   color: #020617;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+.page-content {
+  padding-top: 80px; /* navbar height */
+}

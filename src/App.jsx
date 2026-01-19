@@ -8,10 +8,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Projects />
-      <Resume />
-      <Contact />
+
+<div className="page-content">
+  <Hero />
+  <Projects />
+  <Contact />
+</div>
+
     </>
   );
 }

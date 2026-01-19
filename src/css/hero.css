@@ -11,13 +11,14 @@
 /* ================= HERO ================= */
 
 .hero {
-  min-height: 100vh;
   padding: 120px 80px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
   color: #020617;
+   display: flex;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
 }
 
 .hero-left {

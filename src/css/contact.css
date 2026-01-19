@@ -1,7 +1,8 @@
 /* ================= CONTACT SECTION ================= */
 
 .contact-section {
-  padding: 100px 80px;
+   min-height: 100vh;
+  padding: 40px 20px;
   background: #f8fafc;
 }
 
@@ -170,5 +171,14 @@
   .contact-wrapper::before {
     position: static;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form-box {
+    margin-top: 30px;
   }
 }
