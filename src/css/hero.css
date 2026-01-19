@@ -348,12 +348,72 @@ section {
   }
 }
 /* ===== FIX NAME NOT SHOWING ON MOBILE ===== */
+/* ===== FINAL HERO MOBILE (ANIMATION + CONNECT VISIBLE) ===== */
 @media (max-width: 768px) {
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 70px);
+    padding: 24px;
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* TYPEWRITER – KEEP ANIMATION */
   .typewriter {
-    width: auto !important;
-    overflow: visible !important;
-    white-space: normal !important;
-    border-right: none !important;
-    animation: none !important;
+    width: auto;
+    white-space: normal;
+    overflow: visible;
+    border-right: 3px solid #0ea5e9;
+    animation: typing 3s steps(30, end) forwards,
+               blink 0.7s infinite;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  /* ROLE */
+  .fade-in {
+    font-size: 16px;
+    margin-bottom: 16px;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 3.2s;
+  }
+
+  /* CONNECT WITH ME – FORCE SHOW */
+  .socials {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .socials h4 {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* OPTIONAL: hide image only */
+  .hero-right {
+    display: none;
   }
 }
+
