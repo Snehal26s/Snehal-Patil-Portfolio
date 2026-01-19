@@ -349,77 +349,66 @@ section {
 }
 
 
-/* =================================================
-   HERO – MOBILE (ANIMATION + CONNECT VISIBLE)
-   ================================================= */
+/* ===== FINAL MOBILE HERO FIX (CENTER + ANIMATION) ===== */
 @media (max-width: 768px) {
+
   .hero {
-    min-height: calc(100vh - 70px);
-    padding: 24px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    min-height: calc(100vh - 70px) !important;
+    padding: 0 !important;              /* 🔥 remove desktop padding */
+    display: flex !important;
+    justify-content: center !important; /* vertical center */
+    align-items: center !important;     /* horizontal center */
+    text-align: center !important;
   }
 
   .hero-left {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 
   /* TYPEWRITER – KEEP ANIMATION */
   .typewriter {
-    width: auto;
-    white-space: normal;
-    overflow: visible;
-    border-right: 3px solid #0ea5e9;
+    width: auto !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    border-right: 3px solid #0ea5e9 !important;
     animation: typing 3s steps(30, end) forwards,
-               blink 0.7s infinite;
-    font-size: 28px;
-    margin-bottom: 8px;
+               blink 0.7s infinite !important;
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
   }
 
+  /* ROLE (optional but nice) */
   .fade-in {
-    font-size: 16px;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s ease forwards;
-    animation-delay: 3.2s;
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
+    animation: fadeIn 1.5s ease forwards !important;
+    animation-delay: 3.2s !important;
   }
 
   /* CONNECT WITH ME */
   .socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 12px;
-  }
-
-  .socials h4 {
-    display: block;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 8px !important;
   }
 
   .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 16px !important;
   }
 
-  /* Hide image ONLY */
+  /* Hide image only */
   .hero-right {
-    display: none;
-  }
-
-  /* Optional: hide skills in hero on mobile */
-  .skills {
-    display: none;
+    display: none !important;
   }
 }
+
 
 
 
